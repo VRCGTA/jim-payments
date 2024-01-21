@@ -93,11 +93,11 @@ Config = {
 		['bestbuds'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 
 		-- Jim Mechanic | https://jimathy666.tebex.io/
-		['mechanic'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.10, },
-		['tuners'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.10, },
-		['ottos'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.10, },
-		['lscustoms'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.10, },
-		['bennys'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.10, },
+		['mechanic'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.30, },
+		['tuners'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.30, },
+		['ottos'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.30, },
+		['lscustoms'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.30, },
+		['bennys'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.30, },
 
 		-- Gangs | Example of a gang being supported
 		['lostmc'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, gang = true, },
