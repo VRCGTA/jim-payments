@@ -55,8 +55,8 @@ Config = {
 						-- "qb" for qb-phone
 						-- "gks"" for GKSPhone
 
-	CashInLocation = vector4(252.23, 223.11, 106.29, 159.2), -- Default Third Window along in Pacific Bank
-
+	CashInLocation = vector4(268.32, 217.72, 106.28, 70.06), -- Default Third Window along in Pacific Bank
+	
 	TicketSystem = true, -- Enable this if you want to use the ticket system false
 	TicketSystemAll = true, -- Enable this to give tickets to all workers clocked in
 
