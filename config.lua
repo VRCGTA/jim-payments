@@ -57,8 +57,8 @@ Config = {
 
 	CashInLocation = vector4(268.32, 217.72, 106.28, 70.06), -- Default Third Window along in Pacific Bank
 	
-	TicketSystem = true, -- Enable this if you want to use the ticket system false
-	TicketSystemAll = true, -- Enable this to give tickets to all workers clocked in
+	TicketSystem = false, -- Enable this if you want to use the ticket system false
+	TicketSystemAll = false, -- Enable this to give tickets to all workers clocked in
 
 	Commission = true, -- Set this to true to enable Commissions and give the person charging a percentage of the total
 	CommissionAll = false, -- Set this to true to give commission to workers clocked in
@@ -109,6 +109,10 @@ Config = {
 	-- This adds the ability to add multiple locations for each job
 	-- Basically adding ready made locations, all you need to a vector4 and to confrim if you need a new prop in that location
     CustomCashRegisters = {
+			["burgershot"] = {
+				{ coords = vector4(-1194.71, -893.25, 14.0, 0.0), prop = false },
+				{ coords = vector4(-1195.98, -891.22, 14.0, 0.0), prop = false },
+			}
 		-- ["jobname"] = { -- Player job role restriction
 		-- 	{ coords = vector4(0, 0, 0, 0), prop = true, }, -- vector4 to place the till and the way it faces
 		-- 	{ coords = vector4(0, 0, 0, 0), prop = true, }, -- "prop = true" spawns a prop at the coords
