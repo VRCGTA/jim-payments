@@ -111,10 +111,10 @@ Config = {
 	-- Basically adding ready made locations, all you need to a vector4 and to confrim if you need a new prop in that location
     CustomCashRegisters = {
 			["burgershot"] = {
-				{ coords = vector4(-1191.63, -894.06, 15.16, 0.0), prop = false },
-				{ coords = vector4(-1193.47, -893.63, 15.13, 0.0), prop = false },
-				{ coords = vector4(-1195.45, -893.06, 15.14, 0.0), prop = false },
-				{ coords = vector4(-1197.39, -892.49, 15.16, 0.0), prop = false },
+				{ coords = vector4(-1191.63, -894.06, 14.00, 0.0), prop = false },
+				{ coords = vector4(-1193.47, -893.63, 14.00, 0.0), prop = false },
+				{ coords = vector4(-1195.45, -893.06, 14.00, 0.0), prop = false },
+				{ coords = vector4(-1197.39, -892.49, 14.00, 0.0), prop = false },
 			},
 			["caffe"] = {
 				{ coords = vector4(301.12, -928.13, 58.51, 90.0), prop = true },
