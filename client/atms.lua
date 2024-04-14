@@ -158,7 +158,7 @@ RegisterNetEvent('jim-payments:Client:ATM:use', function(data)
 
 	elseif data.id == "society" then
 		setoptions = { { value = "withdraw", text = Loc[Config.Lan].menu["withdraw"] }, { value = "deposit", text = Loc[Config.Lan].menu["deposit"] } }
-		setview = 	Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerJob.label..Loc[Config.Lan].menu["header_balance"]..PlayerJob.label.." - $"..cv(info.society)..Loc[Config.Lan].menu["bank_balance"]..cv(info.bank)
+		setview = 	Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerJob.label..Loc[Config.Lan].menu["header_balance"]..PlayerJob.label.." - 𝕍"..cv(info.society)..Loc[Config.Lan].menu["bank_balance"]..cv(info.bank)
 		setheader = Loc[Config.Lan].menu["header_soc_bank"]
 		setinputs = { 	{ type = 'radio', name = 'billtype', text = setview, options = setoptions },
 						{ type = 'number', isRequired = true, name = 'amount', text = Loc[Config.Lan].menu["header_trans_amount"] }, }
@@ -167,7 +167,7 @@ RegisterNetEvent('jim-payments:Client:ATM:use', function(data)
 
 	elseif data.id == "societytransfer" then
 		setoptions = { { value = "transfer", text = Loc[Config.Lan].menu["transfer"] } }
-		setview = Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerJob.label..Loc[Config.Lan].menu["header_balance"]..PlayerJob.label.." - $"..cv(info.society)..Loc[Config.Lan].menu["header_option"]
+		setview = Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerJob.label..Loc[Config.Lan].menu["header_balance"]..PlayerJob.label.." - 𝕍"..cv(info.society)..Loc[Config.Lan].menu["header_option"]
 		setheader = Loc[Config.Lan].menu["header_trans"]
 		setinputs = { 	{ type = 'radio', name = 'billtype', text = setview, options = setoptions },
 						{ type = 'text', isRequired = true, name = 'account', text = Loc[Config.Lan].menu["header_account_no"] },
@@ -177,7 +177,7 @@ RegisterNetEvent('jim-payments:Client:ATM:use', function(data)
 
 	elseif data.id == "gang" then
 		setheader = Loc[Config.Lan].menu["header_soc_bank"]
-		setview = Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerGang.label..Loc[Config.Lan].menu["header_balance"]..PlayerGang.label.." - $"..cv(info.gsociety)..Loc[Config.Lan].menu["bank_balance"]..cv(info.bank)..Loc[Config.Lan].menu["header_option"]
+		setview = Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerGang.label..Loc[Config.Lan].menu["header_balance"]..PlayerGang.label.." - 𝕍"..cv(info.gsociety)..Loc[Config.Lan].menu["bank_balance"]..cv(info.bank)..Loc[Config.Lan].menu["header_option"]
 		setoptions = { { value = "withdraw", text = Loc[Config.Lan].menu["withdraw"] }, { value = "deposit", text = Loc[Config.Lan].menu["deposit"] } }
 		setinputs = {	{ type = 'radio', name = 'billtype', text = setview, options = setoptions },
 						{ type = 'number', isRequired = true, name = 'amount', text = Loc[Config.Lan].menu["header_trans_amount"] }, }
@@ -186,7 +186,7 @@ RegisterNetEvent('jim-payments:Client:ATM:use', function(data)
 
 	elseif data.id == "gangtransfer" then
 		setoptions = { { value = "transfer", text = Loc[Config.Lan].menu["transfer"] } }
-		setview = Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerGang.label..Loc[Config.Lan].menu["header_balance"]..PlayerGang.label.." - $"..cv(info.gsociety)..Loc[Config.Lan].menu["header_option"]
+		setview = Loc[Config.Lan].menu["welcome"]..info.name..Loc[Config.Lan].menu["header_soc"]..PlayerGang.label..Loc[Config.Lan].menu["header_balance"]..PlayerGang.label.." - 𝕍"..cv(info.gsociety)..Loc[Config.Lan].menu["header_option"]
 		setheader = Loc[Config.Lan].menu["header_trans"]
 		setinputs = { 	{ type = 'radio', name = 'billtype', text = setview, options = setoptions },
 						{ type = 'text', isRequired = true, name = 'account', text = Loc[Config.Lan].menu["header_account_no"] },

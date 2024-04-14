@@ -42,7 +42,7 @@ RegisterServerEvent('jim-payments:server:ATM:use', function(amount, billtype, ba
 			if savbal >= amount then
 				savbal -= amount
 				Player.Functions.AddMoney('bank', amount)
-				triggerNotify(nil, "$"..cv(amount)..Loc[Config.Lan].success["draw_save"], "success", src)
+				triggerNotify(nil, "𝕍"..cv(amount)..Loc[Config.Lan].success["draw_save"], "success", src)
 				MySQL.Async.execute('UPDATE bank_accounts SET account_balance = ? WHERE citizenid = ?', { savbal, Player.PlayerData.citizenid}, function(success)
 					if success then	return true	else return false end
 				end)
@@ -53,7 +53,7 @@ RegisterServerEvent('jim-payments:server:ATM:use', function(amount, billtype, ba
 			if amount < bankB then
 				savbal += amount
 				Player.Functions.RemoveMoney('bank', amount)
-				triggerNotify(nil, "$"..cv(amount)..Loc[Config.Lan].success["depos_save"], "success", src)
+				triggerNotify(nil, "𝕍"..cv(amount)..Loc[Config.Lan].success["depos_save"], "success", src)
 				MySQL.Async.execute('UPDATE bank_accounts SET account_balance = ? WHERE citizenid = ?', { savbal, Player.PlayerData.citizenid}, function(success)
 					if success then	return true	else return false end
 				end)
@@ -279,7 +279,7 @@ RegisterServerEvent("jim-payments:server:ATM:give", function(citizen, price)
 	if amount and amount > 0 then
 		if balance >= amount then
 			Player.Functions.RemoveMoney('cash', amount)
-			triggerNotify(nil, Loc[Config.Lan].success["you_gave"]..Reciever.PlayerData.charinfo.firstname.." $"..cv(amount), "success", source)
+			triggerNotify(nil, Loc[Config.Lan].success["you_gave"]..Reciever.PlayerData.charinfo.firstname.." 𝕍"..cv(amount), "success", source)
 			Reciever.Functions.AddMoney('cash', amount)
 			triggerNotify(nil, Loc[Config.Lan].success["you_got"]..cv(amount)..Loc[Config.Lan].success["from"]..Player.PlayerData.charinfo.firstname, "success", tonumber(citizen))
 		elseif balance < amount then

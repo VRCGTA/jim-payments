@@ -266,7 +266,7 @@ RegisterServerEvent("jim-payments:server:PolPopup", function(data)
 		end
 	else
 		triggerNotify(nil, Loc[Config.Lan].error["declined_payment"], nil, src)
-		triggerNotify(nil, billed.PlayerData.charinfo.firstname.." declined the $"..data.amount..Loc[Config.Lan].success["charge_end"], "error", data.biller)
+		triggerNotify(nil, billed.PlayerData.charinfo.firstname.." declined the 𝕍"..data.amount..Loc[Config.Lan].success["charge_end"], "error", data.biller)
 	end
 end)
 
