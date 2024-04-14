@@ -73,7 +73,8 @@ Config = {
 		-- Jim Businesses | https://jimathy666.tebex.io/
 		['bakery'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 		['beanmachine'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-		['burgershot'] = { MinAmountforTicket = 50, PayPerTicket = 50 , Commission = 0.10, },
+		['burgershot'] = { MinAmountforTicket = 50, PayPerTicket = 50 , Commission = 0.20, },
+		['caffe'] = { MinAmountforTicket = 50, PayPerTicket = 50 , Commission = 0.10, },
 		['catcafe'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 		['henhouse'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 		['pizzathis'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
