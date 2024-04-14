@@ -116,7 +116,7 @@ Config = {
 				{ coords = vector4(-1197.39, -892.49, 15.16, 0.0), prop = false },
 			},
 			["caffe"] = {
-				{ coords = vector4(300.47, -929.06, 58.37, 0.0), prop = false },
+				{ coords = vector4(301.12, -928.13, 58.51, 90.0), prop = true },
 			}
 		-- ["jobname"] = { -- Player job role restriction
 		-- 	{ coords = vector4(0, 0, 0, 0), prop = true, }, -- vector4 to place the till and the way it faces
